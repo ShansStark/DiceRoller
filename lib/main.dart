@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 //import 'package:flutter/services.dart';
 import 'package:first_app/gradient_container.dart';
@@ -7,10 +5,13 @@ import 'package:first_app/second_container.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Dice Roller'),
+        ),
         //body: GradientContainer(),
-        body: SecondContainer.cyan(),
+        body: const SecondContainer.cyan(),
       ),
     ),
   );
